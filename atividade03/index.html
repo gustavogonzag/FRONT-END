@@ -49,7 +49,27 @@
         <p class="installments">Parcelas: 10x de $50</p>
         <button class="buy-button">Comprar</button>
       </div>
-
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const buttons = document.querySelectorAll('.buy-button');
+  
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          const destination = this.closest('.destination');
+          const name = destination.querySelector('h2').innerText;
+          const image = destination.querySelector('img').src;
+          const packageInfo = {
+            name: name,
+            image: image,
+            // Adicione outras propriedades conforme necessário
+          };
+  
+          console.log(packageInfo);
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>

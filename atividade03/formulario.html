@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./form-styles.css">
+  <title>Formulário de Pacote Turístico</title>
+</head>
+<body>
+  <div class="form-container">
+    <form id="package-form">
+      <label for="destination-name">Nome do Destino:</label>
+      <input type="text" id="destination-name" required>
+
+      <!-- Adicione outros campos do formulário conforme necessário -->
+
+      <label for="image-url">URL da Imagem:</label>
+      <input type="url" id="image-url" required>
+
+      <button type="button" id="insert-button">Inserir</button>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="destinations-container" id="destination-container">
+    <!-- Destinos serão inseridos dinamicamente aqui -->
+  </div>
+
+  <script src="form-script.js"></script>
+</body>
+</html>

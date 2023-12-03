@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  #insert-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #insert-button:hover {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
